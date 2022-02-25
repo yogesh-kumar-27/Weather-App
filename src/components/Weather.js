@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./weather.css";
 import { fetchweather } from "./FetchWeather";
 
 const Weather = () => {
@@ -26,7 +25,6 @@ const Weather = () => {
           onChange={(event) => setQuery(event.target.value)}
           onKeyPress={search}
         />
-
        </div>
         {weather.main && (
           <div className="box">
